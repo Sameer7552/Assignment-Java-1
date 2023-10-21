@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(178, 178, 178);
+            font-size: 20px;
+        }
+
+        button {
+            width: auto;
+            height: 40px;
+            background-color: rgb(255, 195, 99);
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="MyMessage()">Alert 1</button>
+    <button onclick="MyMessage2()">Alert 2</button>
+    <button onclick="MyMessage3()">Alert 3</button>
+    <p><b>Copy This text and paste in console: <i>"alert("Hello... I can run JS through my web browser's
+                console.");"</i></b></p>
+
+    <button onclick="Alert()">Display Message</button>
+    <button onclick="Alert2()">Display Student Data</button>
+    <br><br>
+    <button onclick="Alert3()">Display Message In Triangle</button>
+
+    <script type="text/javascript">
+        alert("Welcome to our website! We're glad you're here.");
+        function MyMessage() {
+            alert("Error! please enter a valid password.");
+        }
+        function MyMessage2() {
+            alert("Welcome to JS Land...\nHappy Coding!");
+        }
+        function MyMessage3() {
+            alert("Welcome to JS Land...");
+            alert("Happy Coding!\nPrevent this page from creating additional diaglogs.");
+        }
+        var username;
+        var myName = "Muhammad Sameer Khan";
+        var message;
+        message = "Hello World";
+        function Alert() {
+            alert(message)
+        }
+        var stdName = "Jhone Doe";
+        var age = "15 Years old";
+        var qualification = "Certified Mobile Application Development ";
+        function Alert2() {
+            alert(stdName)
+            alert(age)
+            alert(qualification)
+        }
+        var message = "PIZZA";
+        var temp = ""
+        function Alert3() {
+            for (var i = message.length; i > 0; i--) {
+                temp += message.slice(0, i) + "\n";
+            }
+            alert(temp)
+        }
+    </script>
+
+</body>
+
+</html>
